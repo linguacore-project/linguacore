@@ -2,6 +2,8 @@
 
 **An Open Infrastructure for Language Documentation, Research, Education, and Revitalization**
 
+DocuLing is an open-source platform for language documentation that unifies corpora, dictionaries, grammars, multimedia, educational resources, and research workflows into a single evidence-based knowledge infrastructure.
+
 ## Included
 
 - FastAPI application with health, language, resource and sentence endpoints
