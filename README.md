@@ -1,6 +1,6 @@
-# DocuLing v0.3 — executable foundation
+# DocuLing
 
-A runnable foundation for an evidence-first language documentation platform. Bororo is the canonical demonstration project; the core contains no Bororo-specific business logic.
+**An Open Infrastructure for Language Documentation, Research, Education, and Revitalization**
 
 ## Included
 
