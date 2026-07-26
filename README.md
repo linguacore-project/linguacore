@@ -1,8 +1,12 @@
 # DocuLing
 
-**An Open Infrastructure for Language Documentation, Research, Education, and Revitalization**
+**An Open Scientific Infrastructure for Language Documentation, Research, Education, and Revitalization**
 
-DocuLing is an open-source platform for language documentation that unifies corpora, dictionaries, grammars, multimedia, educational resources, and research workflows into a single evidence-based knowledge infrastructure.
+DocuLing is an open-source platform that integrates linguistic corpora, lexicons, grammars, multimedia resources, educational materials, and reproducible research workflows within a unified, evidence-based infrastructure.
+
+The project is designed for documentary linguists, language communities, educators, archivists, researchers, and software developers. Its architecture prioritizes provenance, versioning, interoperability, scientific reproducibility, and community control over linguistic data.
+
+> **Current status:** early architectural prototype. The data model, interfaces, and APIs remain under active development.
 
 ## Included
 
@@ -22,7 +26,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e '.[dev]'
 python tools/generate.py
-uvicorn linguacore.main:app --reload
+uvicorn doculing.main:app --reload
 ```
 
 API documentation: `http://127.0.0.1:8000/docs`
