@@ -1,0 +1,26 @@
+language:
+  iso639_3: bor
+  name: Bororo
+  autonym: Boe Wadáru
+  slug: bororo
+
+sources:
+  dictionary:
+    canonical: "Dicionário Bororo.xlsx - Dicionário.tsv"
+  treebank:
+    canonical: "Bororo.conllu"
+    trust: imported_unverified
+  corpus_zip:
+    canonical_text_sources:
+      - "Bororo-Corpus-main/CorBo/Corpus_Files/monolingual.csv"
+      - "Bororo-Corpus-main/CorBo/Corpus_Files/bakaru_nascimento_bororo_paralelo.txt"
+    derived_or_overlapping_sources:
+      - "Bororo-Corpus-main/Tagged_CorBo/bor_bdt-ud.json"
+      - "Bororo-Corpus-main/Tagged_CorBo/bor_bdt-ud-inline.txt"
+      - "Bororo-Corpus-main/Tagged_CorBo/bor_bdt-ud-tab.txt"
+      - "Bororo-Corpus-main/CorBo/Corpus_Files/Bororo_UD_enriched_v5_plus_scripture.conllu"
+
+publication:
+  show_unverified_morphology: false
+  show_unverified_syntax: false
+  show_unverified_dictionary_links: true

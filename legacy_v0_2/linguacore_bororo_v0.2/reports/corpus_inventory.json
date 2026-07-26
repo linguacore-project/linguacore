@@ -1,0 +1,773 @@
+{
+  "source": "/mnt/data/Bororo-Corpus-main.zip",
+  "sha256": "c9b1bb8fb92c62e9c394f7d01ec5f4971b851922af8ee5e927852df6bdb55201",
+  "files": [
+    {
+      "path": "Bororo-Corpus-main/CITATION.cff",
+      "bytes": 542,
+      "extension": ".cff"
+    },
+    {
+      "path": "Bororo-Corpus-main/README.md",
+      "bytes": 4989,
+      "extension": ".md"
+    },
+    {
+      "path": "Bororo-Corpus-main/.gitignore",
+      "bytes": 11,
+      "extension": ""
+    },
+    {
+      "path": "Bororo-Corpus-main/docs/index.html",
+      "bytes": 5540,
+      "extension": ".html"
+    },
+    {
+      "path": "Bororo-Corpus-main/docs/deploy_to_ghpages.sh",
+      "bytes": 2781,
+      "extension": ".sh"
+    },
+    {
+      "path": "Bororo-Corpus-main/docs/citation.bib",
+      "bytes": 437,
+      "extension": ".bib"
+    },
+    {
+      "path": "Bororo-Corpus-main/docs/bororo_corpus_pre-release_v5.zip",
+      "bytes": 612566,
+      "extension": ".zip"
+    },
+    {
+      "path": "Bororo-Corpus-main/Tagged_CorBo/bor_bdt-ud-inline.txt",
+      "bytes": 2366516,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/Tagged_CorBo/bor_bdt-ud-tab.txt",
+      "bytes": 2387899,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/Tagged_CorBo/Bororo_UD_enriched_v5_meta_report.txt",
+      "bytes": 173,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/Tagged_CorBo/bor_bdt-ud.json",
+      "bytes": 8000360,
+      "extension": ".json"
+    },
+    {
+      "path": "Bororo-Corpus-main/Tagged_CorBo/Bororo_UD_enriched_v5.conllu",
+      "bytes": 489692,
+      "extension": ".conllu"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/monolingual.csv",
+      "bytes": 137773,
+      "extension": ".csv",
+      "row_count": 1360,
+      "columns": [
+        "id",
+        "bororo"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bakaru_nascimento_bororo_paralelo.txt",
+      "bytes": 5347,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bororo_scripture_parallel.csv",
+      "bytes": 1759713,
+      "extension": ".csv",
+      "row_count": 51,
+      "columns": [
+        "source",
+        "book",
+        "chapter",
+        "verse",
+        "bororo",
+        "portugues"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/Bororo_UD_enriched_v5_plus_scripture.conllu",
+      "bytes": 12885135,
+      "extension": ".conllu"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/pedrosa_monolingue.csv",
+      "bytes": 5097,
+      "extension": ".csv",
+      "row_count": 68,
+      "columns": [
+        "id",
+        "bororo",
+        "fonte"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bororo_scripture_full_v5.zip",
+      "bytes": 2653941,
+      "extension": ".zip"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bororo_lexicon_template_for_enrichment.csv",
+      "bytes": 27147,
+      "extension": ".csv",
+      "row_count": 1011,
+      "columns": [
+        "lemma\tupos\txpos\tform_sample\tfreq_in_corpus\tGLOSS\tCLS\tPRCLITIC"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/README.md",
+      "bytes": 883,
+      "extension": ".md"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bororo_nt_clean.csv",
+      "bytes": 1256780,
+      "extension": ".csv",
+      "row_count": 7908,
+      "columns": [
+        "book",
+        "chapter",
+        "verse",
+        "bororo_text",
+        "has_unusual_char"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bororo_scripture_meta.tsv",
+      "bytes": 1832,
+      "extension": ".tsv",
+      "row_count": 32,
+      "columns": [
+        "source",
+        "book",
+        "genre",
+        "language",
+        "notes"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bororo_lexical_missing_fields.tsv",
+      "bytes": 52,
+      "extension": ".tsv",
+      "row_count": 0,
+      "columns": [
+        "lemma",
+        "upos",
+        "xpos",
+        "freq",
+        "sample_form",
+        "GLOSS",
+        "CLS",
+        "PRCLITIC"
+      ]
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/Bororo_UD_enriched_v5_scripture.conllu",
+      "bytes": 12885135,
+      "extension": ".conllu"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Metadata/metadata.xml",
+      "bytes": 5550,
+      "extension": ".xml"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/eclesiastico_2-orthophon.txt",
+      "bytes": 9060,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/sabedoria_2-orthophon.txt",
+      "bytes": 16445,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/macabeus_1_2-orthophon.txt",
+      "bytes": 10321,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/daniel_2-orthophon.txt",
+      "bytes": 25049,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/proverbios_2-orthophon.txt",
+      "bytes": 4938,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/reis_2_2-orthophon.txt",
+      "bytes": 20369,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/jonas_2-orthophon.txt",
+      "bytes": 5741,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/joel_2-orthophon.txt",
+      "bytes": 4993,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/esdras_2-orthophon.txt",
+      "bytes": 4330,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/samuel_2_2-orthophon.txt",
+      "bytes": 18138,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/eclesiastes_2-orthophon.txt",
+      "bytes": 4032,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/cantico_dos_canticos_2-orthophon.txt",
+      "bytes": 1686,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/genesis.docx",
+      "bytes": 76784,
+      "extension": ".docx"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/deuteronomio_2-orthophon.txt",
+      "bytes": 21202,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/numeros_2-orthophon.txt",
+      "bytes": 10240,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/reis_1_2-orthophon.txt",
+      "bytes": 30684,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/macabeus_2_2-orthophon.txt",
+      "bytes": 6059,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/amos_2-orthophon.txt",
+      "bytes": 6935,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/ageu.txt",
+      "bytes": 2464,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/levitico_2-orthophon.txt",
+      "bytes": 4967,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/samuel_1_2-orthophon.txt",
+      "bytes": 21018,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/novo_testamento_ochoa.txt",
+      "bytes": 1074183,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/salmos.json",
+      "bytes": 286522,
+      "extension": ".json"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/cronicas_1_2_2-orthophon.txt",
+      "bytes": 5226,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/oseias_2-orthophon.txt",
+      "bytes": 7711,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/rute_2-orthophon.txt",
+      "bytes": 3288,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/baruc_2-orthophon.txt",
+      "bytes": 4806,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/lamentacoes_2-orthophon.txt",
+      "bytes": 1903,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/josue_2-orthophon.txt",
+      "bytes": 8036,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/juizes_2-orthophon.txt",
+      "bytes": 7601,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/malaquias_2-orthophon.txt",
+      "bytes": 4098,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Scripture_Sources/judite_e_ester_2-orthophon.txt",
+      "bytes": 3545,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/tobias_2-orthophon.txt",
+      "bytes": 15230,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/eclesiastico_2-orthophon.txt",
+      "bytes": 9060,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/sabedoria_2-orthophon.txt",
+      "bytes": 16445,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/macabeus_1_2-orthophon.txt",
+      "bytes": 10321,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/ageu_2-orthophon.txt",
+      "bytes": 2463,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/daniel_2-orthophon.txt",
+      "bytes": 25049,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/proverbios_2-orthophon.txt",
+      "bytes": 4938,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/reis_2_2-orthophon.txt",
+      "bytes": 20369,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/jonas_2-orthophon.txt",
+      "bytes": 5741,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/joel_2-orthophon.txt",
+      "bytes": 4993,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/esdras_2-orthophon.txt",
+      "bytes": 4330,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/samuel_2_2-orthophon.txt",
+      "bytes": 18138,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/eclesiastes_2-orthophon.txt",
+      "bytes": 4032,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/jeremias_2-orthophon.txt",
+      "bytes": 26641,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/cantico_dos_canticos_2-orthophon.txt",
+      "bytes": 1686,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/miqueias_2-orthophon.txt",
+      "bytes": 6578,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/neemias_2-orthophon.txt",
+      "bytes": 7066,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/deuteronomio_2-orthophon.txt",
+      "bytes": 21202,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/numeros_2-orthophon.txt",
+      "bytes": 10240,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/reis_1_2-orthophon.txt",
+      "bytes": 30684,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/sofonias_2-orthophon.txt",
+      "bytes": 2928,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/naum_e_habacuc_2-orthophon.txt",
+      "bytes": 3094,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/macabeus_2_2-orthophon.txt",
+      "bytes": 6059,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/amos_2-orthophon.txt",
+      "bytes": 6935,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/levitico_2-orthophon.txt",
+      "bytes": 4967,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/samuel_1_2-orthophon.txt",
+      "bytes": 21018,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/novo_testamento_ochoa.txt",
+      "bytes": 1079847,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/cronicas_1_2_2-orthophon.txt",
+      "bytes": 5226,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/oseias_2-orthophon.txt",
+      "bytes": 7711,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/rute_2-orthophon.txt",
+      "bytes": 3288,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/zacarias_2-orthophon.txt",
+      "bytes": 5381,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/baruc_2-orthophon.txt",
+      "bytes": 4806,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/jo_2-orthophon.txt",
+      "bytes": 10278,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/lamentacoes_2-orthophon.txt",
+      "bytes": 1903,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/josue_2-orthophon.txt",
+      "bytes": 8036,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/juizes_2-orthophon.txt",
+      "bytes": 7601,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/malaquias_2-orthophon.txt",
+      "bytes": 4098,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/judite_e_ester_2-orthophon.txt",
+      "bytes": 3545,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/genesis_2-orthophon.txt",
+      "bytes": 55007,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/mitologia/juko_ro.txt",
+      "bytes": 4080,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/mitologia/criacao_dos_morros_paralelo.txt",
+      "bytes": 4540,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/mitologia/aere_paralelo.txt",
+      "bytes": 1694,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/mitologia/historia_mitica_bor.txt",
+      "bytes": 220871,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/biografia/coqueiro_bio.txt",
+      "bytes": 403470,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oieigo_kanajo_antonio_caio.txt",
+      "bytes": 18693,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oieigo_para_o_finado_bentinho.txt",
+      "bytes": 10395,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/bokodori_ecerae.txt",
+      "bytes": 13528,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oieigo_para_o_finado_coqueiro.txt",
+      "bytes": 12533,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oiego_para_deus_garcas.txt",
+      "bytes": 10604,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/boe_readodae.txt",
+      "bytes": 1985,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oieigo_de_danca_2.txt",
+      "bytes": 1396,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oieigo_garcas_1988.txt",
+      "bytes": 8046,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/canto/oieigo_do_p_rodolofo_meruri.txt",
+      "bytes": 13064,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/ritual/oieigo_ritual.txt",
+      "bytes": 21702,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/ritual/adugo_biri_paralelo.txt",
+      "bytes": 11440,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/ritual/ipare_ereru.txt",
+      "bytes": 1643,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/ritual/adugo_biri.txt",
+      "bytes": 22348,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/ritual/aroe_etawujedu.txt",
+      "bytes": 199126,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/ritual/oieigo_jiwu_bakaru.txt",
+      "bytes": 2968,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/narrativa/tucum_kejewuge_eno_bapera_reo.txt",
+      "bytes": 12673,
+      "extension": ".txt"
+    },
+    {
+      "path": "Bororo-Corpus-main/CorBo/Corpus_Files/narrativa/Boe-Bororo.txt",
+      "bytes": 2839,
+      "extension": ".txt"
+    }
+  ],
+  "possible_overlaps": [
+    [
+      "Bororo-Corpus-main/CITATION.cff",
+      "Bororo-Corpus-main/docs/citation.bib"
+    ],
+    [
+      "Bororo-Corpus-main/README.md",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/README.md"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/eclesiastico_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/eclesiastico_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/sabedoria_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/sabedoria_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/macabeus_1_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/macabeus_1_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/daniel_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/daniel_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/proverbios_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/proverbios_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/reis_2_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/reis_2_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/jonas_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/jonas_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/joel_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/joel_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/esdras_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/esdras_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/samuel_2_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/samuel_2_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/eclesiastes_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/eclesiastes_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/cantico_dos_canticos_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/cantico_dos_canticos_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/deuteronomio_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/deuteronomio_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/numeros_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/numeros_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/reis_1_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/reis_1_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/macabeus_2_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/macabeus_2_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/amos_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/amos_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/levitico_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/levitico_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/samuel_1_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/samuel_1_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/novo_testamento_ochoa.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/novo_testamento_ochoa.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/cronicas_1_2_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/cronicas_1_2_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/oseias_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/oseias_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/rute_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/rute_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/baruc_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/baruc_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/lamentacoes_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/lamentacoes_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/josue_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/josue_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/juizes_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/juizes_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/malaquias_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/malaquias_2-orthophon.txt"
+    ],
+    [
+      "Bororo-Corpus-main/CorBo/Scripture_Sources/judite_e_ester_2-orthophon.txt",
+      "Bororo-Corpus-main/CorBo/Corpus_Files/bi╠üblia/judite_e_ester_2-orthophon.txt"
+    ]
+  ]
+}

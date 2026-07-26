@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: linguacore
+      POSTGRES_USER: linguacore
+      POSTGRES_PASSWORD: linguacore
+    ports: ["5432:5432"]
+    volumes: ["linguacore_pg:/var/lib/postgresql/data"]
+  api:
+    build: .
+    environment:
+      LINGUACORE_DATABASE_URL: postgresql+psycopg://linguacore:linguacore@db:5432/linguacore
+    ports: ["8000:8000"]
+    depends_on: [db]
+volumes:
+  linguacore_pg:

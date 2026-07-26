@@ -1,0 +1,46 @@
+flowchart TB
+  R[Resource] --> L[Language]
+  R --> C[Corpus]
+  R --> D[Dictionary]
+  R --> G[Grammar]
+  R --> M[Media]
+  R --> E[Education]
+
+  L --> COL[Collection]
+  COL --> TXT[Text]
+  TXT --> S[Sentence]
+  S --> T[Token]
+  S --> TR[Translation]
+  T --> MA[Morphological Analysis]
+  T --> SA[Syntactic Analysis]
+  T --> LL[Lexical Link]
+  LL --> LEM[Lemma]
+  LEM --> DE[Dictionary Entry]
+  DE --> SEN[Sense]
+  SEN --> EX[Corpus Example Link]
+  EX --> S
+
+  LEM --> CON[Concept]
+  CON --> TAX[Taxon / Cultural Entity]
+  CON --> M
+  TXT --> M
+  S --> M
+  LEM --> M
+
+  G --> GT[Grammar Topic]
+  GT --> GX[Grammar Example Link]
+  GX --> S
+
+  E --> COURSE[Course]
+  COURSE --> LESSON[Lesson]
+  LESSON --> EXER[Exercise]
+  EXER --> T
+  EXER --> LEM
+  EXER --> S
+
+  R --> PROV[Provenance Event]
+  R --> REV[Resource Revision]
+  R --> ACL[Access Policy]
+  REV --> REVIEW[Editorial Review]
+  REVIEW --> USER[Agent]
+  PROV --> SRC[Source / Bibliography]

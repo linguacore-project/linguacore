@@ -1,0 +1,17 @@
+project:
+  id: boe-eno-moto
+  name: Boe eno Moto
+  language:
+    name: Bororo
+    native_name: Boe
+    iso_639_3: bor
+    glottocode: boro1282
+  default_locale: pt-BR
+  visibility: community
+  modules: [corpus, lexicon, grammar, media, education, ethnobotany]
+  import_policy:
+    initial_editorial_status: imported_unverified
+    permit_automatic_publication: false
+    canonical_sources:
+      corpus: Bororo.conllu
+      dictionary: "Dicionário Bororo.xlsx - Dicionário.tsv"

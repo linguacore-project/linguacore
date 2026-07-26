@@ -1,0 +1,12 @@
+code: LAN-0001
+name: Language
+inherits: Resource
+description: A human language or documented language variety.
+fields:
+  name: {type: string, required: true}
+  native_name: {type: string, required: false}
+  iso_639_3: {type: string, required: false, pattern: "^[a-z]{3}$"}
+  glottocode: {type: string, required: false}
+  description: {type: string, required: false}
+rules:
+  - ISO 639-3 codes, when supplied, are unique.

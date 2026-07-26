@@ -1,0 +1,11 @@
+code: EVI-0001
+name: EvidenceLink
+inherits: Resource
+description: A typed link connecting a claim or interpretation to primary evidence.
+fields:
+  claim_resource_id: {type: uuid, required: true}
+  evidence_resource_id: {type: uuid, required: true}
+  relation_type: {type: string, required: true}
+  note: {type: string, required: false}
+rules:
+  - A resource cannot be evidence for itself.

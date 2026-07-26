@@ -1,0 +1,18 @@
+code: RES-0001
+name: Resource
+abstract: true
+description: Persistent, addressable, versioned and citable object.
+fields:
+  id: {type: uuid, required: true, immutable: true}
+  resource_type: {type: string, required: true, immutable: true}
+  language_id: {type: uuid, required: false}
+  organization_id: {type: uuid, required: false}
+  editorial_status: {type: EditorialStatus, required: true, default: draft}
+  visibility: {type: Visibility, required: true, default: restricted}
+  license: {type: string, required: false}
+  persistent_uri: {type: string, required: false}
+  created_at: {type: datetime, required: true, generated: true}
+  updated_at: {type: datetime, required: true, generated: true}
+rules:
+  - Automated systems may not set editorial_status to reviewed or published.
+  - Persistent identifiers are never reused.

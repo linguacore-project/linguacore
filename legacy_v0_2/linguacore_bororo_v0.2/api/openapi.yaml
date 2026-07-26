@@ -1,0 +1,248 @@
+openapi: 3.1.0
+info:
+  title: LinguaCore API
+  version: 0.2.0
+  description: API inicial para corpus, leitor, dicionário e revisão editorial.
+servers:
+  - url: /api/v1
+paths:
+  /languages:
+    get:
+      summary: List languages
+      responses:
+        '200':
+          description: Language list
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/Language'}
+  /languages/{languageSlug}/collections:
+    get:
+      summary: List public collections
+      parameters:
+        - {$ref: '#/components/parameters/LanguageSlug'}
+      responses:
+        '200':
+          description: Collection list
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/Collection'}
+  /texts/{textId}:
+    get:
+      summary: Read text metadata
+      parameters:
+        - {$ref: '#/components/parameters/TextId'}
+      responses:
+        '200':
+          description: Text metadata
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Text'}
+  /texts/{textId}/sentences:
+    get:
+      summary: Read text sentences for interactive reader
+      parameters:
+        - {$ref: '#/components/parameters/TextId'}
+        - name: include
+          in: query
+          schema: {type: string, default: translations,tokens,dictionary}
+      responses:
+        '200':
+          description: Reader sentences
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/Sentence'}
+  /dictionary/search:
+    get:
+      summary: Search dictionary headwords and definitions
+      parameters:
+        - name: language
+          in: query
+          required: true
+          schema: {type: string}
+        - name: q
+          in: query
+          required: true
+          schema: {type: string, minLength: 1}
+        - name: status
+          in: query
+          schema: {type: string, default: published}
+      responses:
+        '200':
+          description: Dictionary results
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/DictionaryEntry'}
+  /dictionary/entries/{entryId}:
+    get:
+      summary: Read a dictionary entry
+      parameters:
+        - name: entryId
+          in: path
+          required: true
+          schema: {type: string, format: uuid}
+      responses:
+        '200':
+          description: Dictionary entry
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/DictionaryEntry'}
+  /review/sentences/{sentenceId}/status:
+    patch:
+      summary: Change sentence editorial status
+      security: [{bearerAuth: []}]
+      parameters:
+        - name: sentenceId
+          in: path
+          required: true
+          schema: {type: string, format: uuid}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/ReviewCommand'}
+      responses:
+        '200': {description: Status changed}
+  /review/tokens/{tokenId}/analyses:
+    post:
+      summary: Add a manual or automatic analysis proposal
+      security: [{bearerAuth: []}]
+      parameters:
+        - name: tokenId
+          in: path
+          required: true
+          schema: {type: string, format: uuid}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/MorphologicalAnalysisInput'}
+      responses:
+        '201': {description: Analysis created}
+components:
+  securitySchemes:
+    bearerAuth: {type: http, scheme: bearer, bearerFormat: JWT}
+  parameters:
+    LanguageSlug:
+      name: languageSlug
+      in: path
+      required: true
+      schema: {type: string}
+    TextId:
+      name: textId
+      in: path
+      required: true
+      schema: {type: string, format: uuid}
+  schemas:
+    Language:
+      type: object
+      required: [id, name, slug]
+      properties:
+        id: {type: string, format: uuid}
+        iso639_3: {type: [string, 'null']}
+        name: {type: string}
+        autonym: {type: [string, 'null']}
+        slug: {type: string}
+    Collection:
+      type: object
+      required: [id, title]
+      properties:
+        id: {type: string, format: uuid}
+        title: {type: string}
+        description: {type: [string, 'null']}
+        text_count: {type: integer}
+    Text:
+      type: object
+      required: [id, status, access]
+      properties:
+        id: {type: string, format: uuid}
+        title: {type: [string, 'null']}
+        genre: {type: [string, 'null']}
+        status: {$ref: '#/components/schemas/EditorialStatus'}
+        access: {type: string}
+    Sentence:
+      type: object
+      required: [id, surface_text, status, tokens]
+      properties:
+        id: {type: string, format: uuid}
+        surface_text: {type: string}
+        status: {$ref: '#/components/schemas/EditorialStatus'}
+        translations:
+          type: array
+          items: {$ref: '#/components/schemas/Translation'}
+        tokens:
+          type: array
+          items: {$ref: '#/components/schemas/Token'}
+    Token:
+      type: object
+      required: [id, form]
+      properties:
+        id: {type: string, format: uuid}
+        form: {type: string}
+        normalized_form: {type: [string, 'null']}
+        lexical_candidates:
+          type: array
+          items: {$ref: '#/components/schemas/DictionaryEntrySummary'}
+        morphology:
+          type: array
+          items: {$ref: '#/components/schemas/MorphologicalAnalysis'}
+    Translation:
+      type: object
+      properties:
+        language: {type: string}
+        type: {type: string}
+        text: {type: string}
+        status: {$ref: '#/components/schemas/EditorialStatus'}
+    DictionaryEntrySummary:
+      type: object
+      properties:
+        id: {type: string, format: uuid}
+        headword: {type: string}
+        pos: {type: [string, 'null']}
+        definition: {type: [string, 'null']}
+        link_status: {type: string}
+    DictionaryEntry:
+      allOf:
+        - {$ref: '#/components/schemas/DictionaryEntrySummary'}
+        - type: object
+          properties:
+            ipa: {type: [string, 'null']}
+            senses: {type: array, items: {type: object}}
+            media: {type: array, items: {type: object}}
+            occurrences: {type: array, items: {type: object}}
+            status: {$ref: '#/components/schemas/EditorialStatus'}
+    MorphologicalAnalysis:
+      type: object
+      properties:
+        lemma_form: {type: [string, 'null']}
+        upos: {type: [string, 'null']}
+        xpos: {type: [string, 'null']}
+        features: {type: object, additionalProperties: true}
+        segmentation: {type: [string, 'null']}
+        gloss: {type: [string, 'null']}
+        status: {$ref: '#/components/schemas/EditorialStatus'}
+        preferred: {type: boolean}
+    MorphologicalAnalysisInput:
+      allOf:
+        - {$ref: '#/components/schemas/MorphologicalAnalysis'}
+        - type: object
+          required: [method]
+          properties:
+            method: {type: string, enum: [manual, automatic, imported, inferred]}
+            note: {type: [string, 'null']}
+    ReviewCommand:
+      type: object
+      required: [new_status]
+      properties:
+        new_status: {$ref: '#/components/schemas/EditorialStatus'}
+        note: {type: [string, 'null']}
+    EditorialStatus:
+      type: string
+      enum: [draft, imported_unverified, under_review, partially_validated, validated, published, rejected, superseded, archived]
