@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use LinguaCore in research, please cite the software using this metadata."
+title: "LinguaCore"
+type: software
+authors:
+  - family-names: "Ferraz Gerardi"
+    given-names: "Fabrício"
+repository-code: "https://github.com/linguacore-project/linguacore"
+url: "https://github.com/linguacore-project/linguacore"
+license: Apache-2.0
+version: 0.3.0
+date-released: 2026-07-26
+keywords:
+  - language documentation
+  - documentary linguistics
+  - language revitalization
+  - corpus linguistics
+  - lexicography
+  - research infrastructure
